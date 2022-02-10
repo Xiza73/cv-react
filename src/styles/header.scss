@@ -1,0 +1,25 @@
+@import "./../utils/sass/mixins.scss";
+@import './../utils/sass/vars.scss';
+
+.header-container {
+  @include flex-center;
+  flex-direction: column;
+  border-width: 0 0 5px 0;
+  border-color: $soft-blue;
+  border-style: solid;
+  z-index: 99;
+  .title {
+    font-size: 4.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $soft-blue;
+    margin-bottom: 7px;
+  }
+  .description {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $blue;
+    margin-bottom: 45px;
+  }
+}

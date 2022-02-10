@@ -1,0 +1,12 @@
+.icon_list-container {
+    width: 100%;
+    .icon-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 14px;
+        svg {
+            margin-right: 15px;
+        }
+    }
+
+}

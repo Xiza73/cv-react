@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+@import './utils/sass/vars.scss';
+/* 
+    Hoja A4
+    body:
+        width: 840px;
+        height: 1412px;
+        margin: 143px 180px
+        total: w = 1200px; h = 1698px
+        change the margins as you want them to be.
+*/
+
+*, *::before, *::after {
+  font-family: 'Quicksand', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: auto;
+}
+
+body {
+  /* width: calc($full-width + 2 * $margin);
+  height: calc($full-height + 2 * $margin); */
+  width: $full-width;
+  height: $full-height;
+  margin: $margin;
+  background-color: $bg;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: $soft-dark;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2rem;
+  color: $soft-dark;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: $soft-dark;
+}
+
+.content-container {
+  padding: 40px 40px 20px 40px;
+}
+
+svg {
+  color: $blue;
+  width: 40px !important;
+  height: 35px !important;
+}

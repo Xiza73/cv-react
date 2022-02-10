@@ -1,0 +1,54 @@
+@import "./../utils/sass/vars.scss";
+
+.main_list-container {
+  width: 100%;
+  .main-row {
+    margin-bottom: 18px;
+    position: relative;
+    padding-left: 20px;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 22px;
+      bottom: -11%;
+      border: 1px $soft-blue solid;
+      border-width: 0 0 0 2px;
+    }
+    h3 {
+      position: relative;
+      &::before {
+        content: "\A";
+        display: block;
+        position: absolute;
+        z-index: 2;
+        top: 0.5rem;
+        left: -26.5px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: $blue;
+      }
+    }
+    .detail {
+      font-style: italic;
+      color: rgba(0, 0, 0, 0.685);
+      margin-bottom: 0.2rem;
+    }
+    .date {
+      color: rgba(0, 0, 0, 0.397);
+      margin-bottom: 0.5rem;
+    }
+    .paragraph {
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 1.8rem;
+      padding-bottom: 0;
+    }
+    .extra {
+      height: 30px;
+    }
+  }
+}

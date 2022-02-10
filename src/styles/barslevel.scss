@@ -1,0 +1,23 @@
+@import "./../utils/sass/vars.scss";
+
+.bars_level-container {
+  width: 100%;
+  height: 300px;
+  .bar-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    .progress-bar {
+      width: 250px;
+      background-color: $soft-blue;
+      border-radius: 13px;
+      padding: 0px;
+      div {
+        background-color: $blue;
+        height: 20px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
