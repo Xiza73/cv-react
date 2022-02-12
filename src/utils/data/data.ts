@@ -1,17 +1,8 @@
+import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
-  faAngular,
-  faGithubSquare,
-  faJava,
-  faLinkedin,
-  faNode,
-  faReact,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faDatabase,
   faEnvelope,
   faMapMarkerAlt,
   faPhoneAlt,
-  faTasks,
 } from "@fortawesome/free-solid-svg-icons";
 
 const data = {
@@ -29,6 +20,7 @@ const data = {
     rows: [
       {
         key: "r1",
+        //icon: faEnvelope,
         icon: faEnvelope,
         content: "m.fajardo.1098@gmail.com",
         url: undefined,
@@ -65,25 +57,36 @@ const data = {
       {
         key: "a1",
         content: "Back-end Dev",
-        icons: [faNode, faJava],
+        icons: [
+          "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg",
+          "https://www.vectorlogo.zone/logos/springio/springio-icon.svg",
+        ],
         dots: 4,
       },
       {
         key: "a2",
         content: "Front-end Dev",
-        icons: [faAngular, faReact],
+        icons: [
+          "https://cdn.worldvectorlogo.com/logos/angular-icon.svg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
+        ],
         dots: 4,
       },
       {
         key: "a3",
         content: "DBA",
-        icons: [faDatabase],
+        icons: [
+          "https://cdn.worldvectorlogo.com/logos/postgresql.svg",
+          "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg",
+        ],
         dots: 4,
       },
       {
         key: "a4",
         content: "Scrum",
-        icons: [faTasks],
+        icons: [
+          "https://cdn.iconscout.com/icon/free/png-256/scrum-2-458188.png",
+        ],
         dots: 3,
       },
     ],
@@ -110,7 +113,7 @@ const data = {
         achievements: [
           "Implementación de Casos de Uso a nivel front, back y base de datos utilizando tecnologías como Angular, Spring Boot, Postgres.",
           "Despliegue a producción al servidor dedicado.",
-          "Trabajo bajo la metodología ágil Scrum."
+          "Trabajo bajo la metodología ágil Scrum.",
         ],
       },
       {
@@ -120,35 +123,44 @@ const data = {
           "Maquetación de vistas interactivas en React.",
           "Manejo de un servidor dedicado para el despliegue constante del proyecto.",
           "Actualización de data y creación de schemas en MongoDB.",
-          "Implementación/mantenimiento DAO en Nest para las funciones en MongoDB."
+          "Implementación/mantenimiento DAO en Nest para las funciones en MongoDB.",
         ],
       },
     ],
   },
   education: {
-      title: "Educación",
-      rows: [
-          {
-              title: "Ingeniería de Software",
-              detail: "Universidad Nacional Mayor de San Marcos",
-              date: "2017 - Actualidad"
-          }
-      ]
+    title: "Educación",
+    rows: [
+      {
+        title: "Ingeniería de Software",
+        detail: "Universidad Nacional Mayor de San Marcos",
+        date: "2017 - Actualidad",
+      },
+    ],
   },
   interests: {
-      title: "Intereses",
-      rows: [
-          {
-            paragraph: "Programación Competitiva."
-          },
-          {
-            paragraph: "Educación: matemáticas, programación."
-          },
-          {
-            paragraph: "Deportes: natación, ajedrez."
-          }
-      ]
-  }
+    title: "Intereses",
+    rows: [
+      {
+        paragraph: "Educación: matemáticas, programación.",
+      },
+      {
+        paragraph: "Deportes: natación, ajedrez.",
+      },
+    ],
+  },
+};
+
+export const interests = {
+  title: "Intereses",
+  rows: [
+    {
+      paragraph: "Educación: matemáticas, programación.",
+    },
+    {
+      paragraph: "Deportes: natación, ajedrez.",
+    },
+  ],
 };
 
 export default data;

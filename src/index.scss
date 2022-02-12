@@ -66,4 +66,8 @@ svg {
   color: $blue;
   width: 40px !important;
   height: 35px !important;
+  image {
+    width: auto;
+    height: 100%;
+  }
 }

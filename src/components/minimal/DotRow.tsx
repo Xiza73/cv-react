@@ -1,12 +1,20 @@
-import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import { faCircle as faC } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IAbilities } from "../../utils/types";
 
 function DotRow({ icons, content, dots }: IAbilities) {
-  const dotIcons = icons?.map((e, i) => (
-    <FontAwesomeIcon key={`ic${i}`} icon={e} />
-  ));
+  const dotIcons = icons?.map((e, i) =>
+    typeof e === "string" ? (
+      <>
+        <svg key={`ic${i}`}>
+          <image href={e} />
+        </svg>
+      </>
+    ) : (
+      <FontAwesomeIcon key={`ic${i}`} icon={e} />
+    )
+  );
   if (dots > 5) dots = 5;
   const dotLvl = [];
   for (let i = 0; i < dots; i++) {
@@ -25,7 +33,6 @@ function DotRow({ icons, content, dots }: IAbilities) {
         className="il"
         id={`il${i}f`}
         key={`il${i}`}
-        
         icon={faC}
       />
     );
