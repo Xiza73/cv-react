@@ -6,11 +6,9 @@ import { IAbilities } from "../../utils/types";
 function DotRow({ icons, content, dots }: IAbilities) {
   const dotIcons = icons?.map((e, i) =>
     typeof e === "string" ? (
-      <>
-        <svg key={`ic${i}`}>
-          <image href={e} />
-        </svg>
-      </>
+      <svg key={`ic${i}`}>
+        <image href={e} />
+      </svg>
     ) : (
       <FontAwesomeIcon key={`ic${i}`} icon={e} />
     )

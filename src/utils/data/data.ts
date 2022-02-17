@@ -6,6 +6,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const data = {
+  rows: {
+    first: 4,
+    second: 3
+  },
   header: {
     title: "manuel fajardo",
     description: "web developer",
@@ -108,22 +112,56 @@ const data = {
     title: "Experiencia Laboral",
     rows: [
       {
-        title: "T-Integro S.A.C - Desarrollador",
+        title: "T-Integro S.A.C - Desarrollador Web",
         date: "Julio, 2021 - Actualidad",
         achievements: [
-          "Implementación de Casos de Uso a nivel front, back y base de datos utilizando tecnologías como Angular, Spring Boot, Postgres.",
-          "Despliegue a producción al servidor dedicado.",
+          "Implementación de Historias de Usuarios a nivel front, back y base de datos utilizando las tecnologías de Angular, Spring, Postgres.",
+          "Manejo de distintos módulos en el backend (api-gateway).",
+          "Mantenimiento continuó de dos proyectos.",
           "Trabajo bajo la metodología ágil Scrum.",
         ],
       },
-      {
-        title: "Arca de Papel E.I.R.L - Desarrollador",
-        date: "Febrero, 2021 - Junio, 2021",
+      /* {
+        title: "Arca de Papel E.I.R.L - Freelancer",
+        date: "Agosto, 2021 - Enero, 2022",
         achievements: [
           "Maquetación de vistas interactivas en React.",
           "Manejo de un servidor dedicado para el despliegue constante del proyecto.",
           "Actualización de data y creación de schemas en MongoDB.",
-          "Implementación/mantenimiento DAO en Nest para las funciones en MongoDB.",
+          "Implementación de funciones de MongoDB en Nestjs.",
+        ],
+      }, */
+    ],
+  },
+  personalProjects: {
+    title: "Proyectos Académicos/Personales",
+    rows: [
+      {
+        title: "Sistema de búsqueda de libros académicos en pdf",
+        date: "2021",
+        achievements: [
+          "Angular, NodeJs (Express), MongoDB, Typescript"
+        ],
+      },
+      {
+        title: "Sistema de búsqueda de cursos con Webscraping",
+        date: "2021",
+        achievements: [
+          "Angular, NodeJs (Express), Typescript, MongoDB, Python"
+        ],
+      },
+      {
+        title: "Horario con manejo de reportes para una radio",
+        date: "2021",
+        achievements: [
+          "React, NodeJs (Express), MongoDB"
+        ],
+      },
+      {
+        title: "Bot para Discord",
+        date: "2020 - Mantenimiento continuo",
+        achievements: [
+          "NodeJs (Express), Typescript, MongoDB, DiscordJs module"
         ],
       },
     ],

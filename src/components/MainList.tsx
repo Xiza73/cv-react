@@ -11,7 +11,7 @@ function MainList({ title, rows }: IProps) {
     const achvs: JSX.Element[] = [];
     if (e.achievements && e.achievements?.length > 0) {
       e.achievements.forEach((element, index) => {
-        achvs.push(<p key={`ach${index}`}>- {element}</p>);
+        achvs.push(<p key={`ach${index}`} className="list">- {element}</p>);
       });
     }
     return (
