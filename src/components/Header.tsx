@@ -1,11 +1,7 @@
 import "../styles/header.scss";
+import { IHeaderProps } from "../utils/types";
 
-interface IProps {
-  title: string;
-  description: string;
-}
-
-function Header({ title, description }: IProps) {
+function Header({ title, description }: IHeaderProps) {
   return (
     <div className="header-container">
       <div className="title">{title}</div>

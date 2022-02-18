@@ -1,14 +1,7 @@
 import "../styles/barslevel.scss";
+import { IBarsLvlProps } from "../utils/types";
 
-interface IProps {
-  title: string;
-  rows: {
-    content: string;
-    percentage: number;
-  }[];
-}
-
-function BarsLevel({ title, rows }: IProps) {
+function BarsLevel({ title, rows }: IBarsLvlProps) {
   const barRow = rows.map((e, i) => (
     <div key={`br${i}`} className="bar-row">
       <p>{e.content}</p>

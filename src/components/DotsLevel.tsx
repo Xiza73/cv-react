@@ -1,13 +1,8 @@
 import "../styles/dotslevel.scss";
-import { IAbilities } from "../utils/types";
+import { IDotsLvlProps } from '../utils/types';
 import DotRow from "./minimal/DotRow";
 
-interface IProps {
-  title: string;
-  rows: IAbilities[];
-}
-
-function DotsLevel({ title, rows }: IProps) {
+function DotsLevel({ title, rows }: IDotsLvlProps) {
   const dotsRows = rows.map((e, _) => (
     <DotRow key={e.key} content={e.content} icons={e.icons} dots={e.dots} />
   ));

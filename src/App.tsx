@@ -5,26 +5,25 @@ import IconList from "./components/IconList";
 import DotsLevel from "./components/DotsLevel";
 import BarsLevel from "./components/BarsLevel";
 import MainList from "./components/MainList";
-import data from "./utils/data/data";
+import {
+  rows,
+  header,
+  profile,
+  contact,
+  abilities,
+  languages,
+  workExperience,
+  education,
+  //interests,
+  personalProjects,
+} from "./utils/data/data";
 
 function App() {
-  const {
-    rows,
-    header,
-    profile,
-    contact,
-    abilities,
-    languages,
-    workExperience,
-    education,
-    //interests,
-    personalProjects,
-  } = data;
   const row1 = {
-    gridTemplateRows: `repeat(${rows.first - 1}, auto) ${1}fr`,
+    gridTemplateRows: `repeat(${rows.firstColumn - 1}, auto) ${1}fr`,
   };
   const row2 = {
-    gridTemplateRows: `repeat(${rows.second - 1}, auto) ${1}fr`,
+    gridTemplateRows: `repeat(${rows.secondColumn - 1}, auto) ${1}fr`,
   };
   const components = [
     <SimpleContent
@@ -67,10 +66,10 @@ function App() {
       </div>
       <div className="columns">
         <div className="rows" style={row1}>
-          {components.map((e, i) => (i < rows.first ? e : null))}
+          {components.map((e, i) => (i < rows.firstColumn ? e : null))}
         </div>
         <div className="rows" style={row2}>
-          {components.map((e, i) => (i >= rows.first ? e : null))}
+          {components.map((e, i) => (i >= rows.firstColumn ? e : null))}
         </div>
       </div>
     </div>

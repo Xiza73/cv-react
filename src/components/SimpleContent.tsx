@@ -1,9 +1,6 @@
-interface IProps {
-  title: string;
-  content: string;
-}
+import { ISimpleProps } from '../utils/types';
 
-function SimpleContent({ title, content }: IProps) {
+function SimpleContent({ title, content }: ISimpleProps) {
   return (
     <div className="content-container">
       <h2>{title ? title : "Your title here"}</h2>

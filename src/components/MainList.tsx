@@ -1,12 +1,7 @@
 import "../styles/mainlist.scss";
-import { IInformation } from "../utils/types";
+import { IMainListProps } from "../utils/types";
 
-interface IProps {
-  title: string;
-  rows: IInformation[];
-}
-
-function MainList({ title, rows }: IProps) {
+function MainList({ title, rows }: IMainListProps) {
   const mainRows = rows.map((e, i) => {
     const achvs: JSX.Element[] = [];
     if (e.achievements && e.achievements?.length > 0) {

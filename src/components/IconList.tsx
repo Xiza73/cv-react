@@ -1,13 +1,8 @@
 import "../styles/iconlist.scss";
-import { IContact } from "../utils/types";
+import { IIconProps } from "../utils/types";
 import IconRow from "./minimal/IconRow";
 
-interface IProps {
-  title: string;
-  rows: IContact[];
-}
-
-function IconList({ title, rows }: IProps) {
+function IconList({ title, rows }: IIconProps) {
   const rowsContent = rows.map((e) => (
     <IconRow key={e.key} icon={e.icon} content={e.content} url={e.url} />
   ));
