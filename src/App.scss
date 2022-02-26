@@ -3,15 +3,19 @@
 .cv-container {
   display: grid;
   height: $full-height;
+  width: $full-width;
+  padding: $padding-y $padding-x;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
+  background-color: var(--bg);
+  transition: background 0.2s linear;
   .header {
-    width: $full-width;
+    width: calc($full-width - (2 * $padding-x));
   }
   .columns {
-    width: $full-width;
+    width: calc($full-width - (2 * $padding-x));
     display: grid;
-    grid-template-columns: repeat(2, calc($full-width/2));
+    grid-template-columns: repeat(2, calc(($full-width - 2 * $padding-x)/2));
     grid-template-rows: 1fr;
     .rows {
       width: 100%;

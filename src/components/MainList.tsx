@@ -6,7 +6,11 @@ function MainList({ title, rows }: IMainListProps) {
     const achvs: JSX.Element[] = [];
     if (e.achievements && e.achievements?.length > 0) {
       e.achievements.forEach((element, index) => {
-        achvs.push(<p key={`ach${index}`} className="list">- {element}</p>);
+        achvs.push(
+          <p key={`ach${index}`} className="list">
+            - {element}
+          </p>
+        );
       });
     }
     return (
@@ -27,7 +31,7 @@ function MainList({ title, rows }: IMainListProps) {
   return (
     <div className="main_list-container content-container">
       {title && <h2>{title}</h2>}
-      {mainRows}
+      <div className="main-rows">{mainRows}</div>
     </div>
   );
 }

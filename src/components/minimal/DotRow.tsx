@@ -3,7 +3,7 @@ import { faCircle as faC } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IAbilities } from "../../utils/types";
 
-function DotRow({ icons, content, dots }: IAbilities) {
+function DotRow({ icons, content, subcontent, dots }: IAbilities) {
   const dotIcons = icons?.map((e, i) =>
     typeof e === "string" ? (
       <svg key={`ic${i}`}>
@@ -38,7 +38,10 @@ function DotRow({ icons, content, dots }: IAbilities) {
   return (
     <div className="dot-row">
       <div className="content">
-        <p>{content}</p>
+        <div className="text-content">
+          <p className="main-content">{content}</p>
+          <p className="sub-content">{subcontent.join(", ")}</p>
+        </div>
         {dotIcons}
       </div>
       <div className="dots">{dotLvl}</div>

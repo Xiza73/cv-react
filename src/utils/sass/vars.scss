@@ -1,11 +1,58 @@
 //total: w = 1200px; h = 1698px
-$full-width: 1040px;
+/* $full-width: 1040px;
 $full-height: 1518px;
-$margin: 90px 80px;
+$margin: 90px 80px; */
+$full-width: 1200px;
+$full-height: 1698px;
+$padding-x: 80px;
+$padding-y: 90px;
 
 //colors
 $bg: #e7fffe;
-$soft-blue: #03a9fe;
-$blue: #083bc2;
-$soft-dark: #1a1a1a;
-$dark: #0000;
+$primary: #03a9fe;
+$secondary: #083bc2;
+$soft: #1a1a1a;
+$strong: #000;
+$strong-tsp1: rgba(0, 0, 0, 0.685);
+$strong-tsp2: rgba(0, 0, 0, 0.31);
+//dark-mode
+//option 1
+$dark-bg: #151515;
+$dark-primary: #3C415C;
+$dark-secondary: #301B3F;
+$dark-soft: #B4A5A5;
+$dark-strong: #fff;
+$dark-strong-tsp1: rgba(255, 255, 255, 0.31);
+$dark-strong-tsp2: rgba(255, 255, 255, 0.2);
+//option 2
+/* $dark-bg: #222222;
+$dark-primary: #044343;
+$dark-secondary: #045757;
+$dark-soft: #E4E4E4;
+$dark-strong: #fff; */
+
+.theme {
+  --bg: #{$bg};
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --soft: #{$soft};
+  --strong: #{$strong};
+  --tsp1: #{$strong-tsp1};
+  --tsp2: #{$strong-tsp2};
+  &.theme-dark {
+    --bg: #{$dark-bg};
+    --primary: #{$dark-primary};
+    --secondary: #{$dark-secondary};
+    --soft: #{$dark-soft};
+    --strong: #{$dark-strong};
+    --tsp1: #{$dark-strong-tsp1};
+    --tsp2: #{$dark-strong-tsp2};
+  }
+}
+
+.myClass {
+  background-color: var(--bg);
+  color: var(--strong);
+  transition: background 0.2s linear,
+  color 0.2s linear;
+}

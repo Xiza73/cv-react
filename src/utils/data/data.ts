@@ -20,6 +20,7 @@ export const rows: { firstColumn: number; secondColumn: number } = {
 export const header: IHeaderProps = {
   title: "manuel fajardo",
   description: "web developer",
+  link: "https://github.com/Xiza73/cv-react",
 };
 
 export const profile: ISimpleProps = {
@@ -32,32 +33,27 @@ export const contact: IIconProps = {
   title: "Contacto",
   rows: [
     {
-      key: "r1",
       //icon: faEnvelope,
       icon: faEnvelope,
       content: "m.fajardo.1098@gmail.com",
       url: undefined,
     },
     {
-      key: "r2",
       icon: faPhoneAlt,
       content: "+51938263506",
       url: undefined,
     },
     {
-      key: "r3",
       icon: faMapMarkerAlt,
       content: "Comas, Lima, Perú",
       url: undefined,
     },
     {
-      key: "r4",
       icon: faGithubSquare,
       content: "Xiza73",
       url: "https://github.com/Xiza73",
     },
     {
-      key: "r5",
       icon: faLinkedin,
       content: "m-fajardo-as",
       url: "https://www.linkedin.com/in/m-fajardo-as/",
@@ -69,37 +65,45 @@ export const abilities: IDotsLvlProps = {
   title: "Competencias",
   rows: [
     {
-      key: "a1",
       content: "Back-end Dev",
+      subcontent: ["Express", "Spring", "Nest"],
       icons: [
         "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg",
         "https://www.vectorlogo.zone/logos/springio/springio-icon.svg",
       ],
-      dots: 4,
+      dots: 3,
     },
     {
-      key: "a2",
       content: "Front-end Dev",
+      subcontent: ["Angular", "React"],
       icons: [
         "https://cdn.worldvectorlogo.com/logos/angular-icon.svg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
       ],
-      dots: 4,
+      dots: 3,
     },
     {
-      key: "a3",
       content: "DBA",
+      subcontent: ["PostgreSQL", "MongoDB", "MySQL"],
       icons: [
         "https://cdn.worldvectorlogo.com/logos/postgresql.svg",
         "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg",
       ],
-      dots: 4,
+      dots: 3,
     },
     {
-      key: "a4",
-      content: "Scrum",
-      icons: ["https://cdn.iconscout.com/icon/free/png-256/scrum-2-458188.png"],
-      dots: 3,
+      content: "Metodologías",
+      subcontent: ["Agile", "Classic"],
+      icons: [
+        "https://www.scrum.org/themes/custom/scrumorg/assets/images/logo-250.png",
+      ],
+      dots: 2,
+    },
+    {
+      content: "DevOps",
+      subcontent: ["Docker", "Kubernetes"],
+      icons: ["https://i.imgur.com/4eDzdl4.png"],
+      dots: 1,
     },
   ],
 };
@@ -126,9 +130,9 @@ export const workExperience: IMainListProps = {
       date: "Julio, 2021 - Actualidad",
       achievements: [
         "Implementación de Historias de Usuarios a nivel front, back y base de datos utilizando las tecnologías de Angular, Spring, Postgres.",
-        "Manejo de distintos módulos en el backend (api-gateway).",
-        "Mantenimiento continuó de dos proyectos.",
-        "Trabajo bajo la metodología ágil Scrum.",
+        "Manejo de microservicios.",
+        "Mantenimiento continuo de proyectos.",
+        "Trabajo bajo metodología ágil, Scrum.",
       ],
     },
     /* {
@@ -145,27 +149,33 @@ export const workExperience: IMainListProps = {
 };
 
 export const personalProjects: IMainListProps = {
-  title: "Proyectos Académicos/Personales",
+  title: "Freelance",
   rows: [
+    {
+      title:
+        "Web con ejercicios interactivos para Inicial, Primaria y Secundaria",
+      date: "2021 - 2022",
+      achievements: ["ReactJS, NodeJS (NestJS), MongoDB, Typescript"],
+    },
     {
       title: "Sistema de búsqueda de libros académicos en pdf",
       date: "2021",
-      achievements: ["Angular, NodeJs (Express), MongoDB, Typescript"],
+      achievements: ["Angular, NodeJS (Express), MongoDB, Typescript"],
     },
     {
       title: "Sistema de búsqueda de cursos con Webscraping",
       date: "2021",
-      achievements: ["Angular, NodeJs (Express), Typescript, MongoDB, Python"],
+      achievements: ["Angular, NodeJS (Express), Typescript, MongoDB, Python"],
     },
-    {
+    /* {
       title: "Horario con manejo de reportes para una radio",
       date: "2021",
-      achievements: ["React, NodeJs (Express), MongoDB"],
-    },
+      achievements: ["ReactJS, NodeJS (Express), MongoDB"],
+    }, */
     {
       title: "Bot para Discord",
       date: "2020 - Mantenimiento continuo",
-      achievements: ["NodeJs (Express), Typescript, MongoDB, DiscordJs module"],
+      achievements: ["NodeJS (Express), Typescript, MongoDB, DiscordJS"],
     },
   ],
 };

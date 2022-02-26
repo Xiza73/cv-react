@@ -1,15 +1,14 @@
 import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 
 export type IContact = {
-  key: string;
   icon: IconDefinition | string;
   content: string;
   url?: string;
 };
 
 export type IAbilities = {
-  key: string;
   content: string;
+  subcontent: string[];
   icons: (IconDefinition | string)[] | null;
   dots: number;
 };
@@ -25,6 +24,7 @@ export type IInformation = {
 export type IHeaderProps = {
   title: string;
   description: string;
+  link: string | null;
 };
 
 export type ISimpleProps = {
