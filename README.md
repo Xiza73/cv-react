@@ -1,4 +1,5 @@
 # Simple CV with React and Sass
+# Mini portfolio, road to profile update!
 ## Usage
 * npm v12.6+
 ```

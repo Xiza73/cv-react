@@ -18,18 +18,6 @@
       margin-bottom: 15px;
       position: relative;
       padding-left: 20px;
-      /* &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        z-index: 1;
-        left: 0;
-        top: 22px;
-        bottom: -11%;
-        border: 1px var(--primary) solid;
-        border-width: 0 0 0 2px;
-        transition: border 0.2s linear;
-      } */
       h3 {
         position: relative;
         &::before {
@@ -45,6 +33,9 @@
           background: var(--secondary);
           transition: background 0.2s linear;
         }
+      }
+      .list {
+        margin-bottom: 0.5rem;
       }
       .list:last-child {
         font-size: 1.2rem;

@@ -13,13 +13,13 @@ import {
 } from "../types";
 
 export const rows: { firstColumn: number; secondColumn: number } = {
-  firstColumn: 4,
-  secondColumn: 3,
+  firstColumn: 5,
+  secondColumn: 2,
 };
 
 export const header: IHeaderProps = {
   title: "manuel fajardo",
-  description: "web developer",
+  description: "full stack developer",
   link: "https://github.com/Xiza73/cv-react",
 };
 
@@ -80,7 +80,7 @@ export const abilities: IDotsLvlProps = {
         "https://cdn.worldvectorlogo.com/logos/angular-icon.svg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
       ],
-      dots: 3,
+      dots: 4,
     },
     {
       content: "DBA",
@@ -89,7 +89,7 @@ export const abilities: IDotsLvlProps = {
         "https://cdn.worldvectorlogo.com/logos/postgresql.svg",
         "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg",
       ],
-      dots: 3,
+      dots: 4,
     },
     {
       content: "Metodologías",
@@ -97,7 +97,7 @@ export const abilities: IDotsLvlProps = {
       icons: [
         "https://www.scrum.org/themes/custom/scrumorg/assets/images/logo-250.png",
       ],
-      dots: 2,
+      dots: 3,
     },
     {
       content: "DevOps",
@@ -126,8 +126,18 @@ export const workExperience: IMainListProps = {
   title: "Experiencia Laboral",
   rows: [
     {
+      title: "Wally POS S.A.C. - Jr. Full Stack Developer",
+      date: "Marzo, 2022 - Actualidad",
+      achievements: [
+        "Mantenimiento constante del sistema principal 'MiWally' utilizando las tecnologías de Vue, NuxtJS, NodeJs, MongoDB.",
+        "Manejo de microservicios en NodeJS con Express y NestJS.",
+        "Refactorización del sistema secundario 'Consulta MiWally' de Vue a NuxtJS.",
+        "Trabajo bajo metodología ágil Scrum en el rol de desarrollador.",
+      ],
+    },
+    {
       title: "T-Integro S.A.C - Desarrollador Web",
-      date: "Julio, 2021 - Actualidad",
+      date: "Julio, 2021 - Marzo, 2022",
       achievements: [
         "Implementación de Historias de Usuarios a nivel front, back y base de datos utilizando las tecnologías de Angular, Spring, Postgres.",
         "Manejo de microservicios.",
@@ -172,11 +182,11 @@ export const personalProjects: IMainListProps = {
       date: "2021",
       achievements: ["ReactJS, NodeJS (Express), MongoDB"],
     }, */
-    {
+    /* {
       title: "Bot para Discord",
       date: "2020 - Mantenimiento continuo",
       achievements: ["NodeJS (Express), Typescript, MongoDB, DiscordJS"],
-    },
+    }, */
   ],
 };
 

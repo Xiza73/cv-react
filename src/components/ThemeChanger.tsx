@@ -1,3 +1,4 @@
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext } from "react";
@@ -19,8 +20,8 @@ const ThemeChanger = () => {
       />
       <label className="label" htmlFor="chk">
         <div className="ficons">
-          <FontAwesomeIcon className="ficon fm" icon={faMoon} />
-          <FontAwesomeIcon className="ficon fs" icon={faSun} />
+          <FontAwesomeIcon className="ficon fm" icon={faMoon as IconProp} />
+          <FontAwesomeIcon className="ficon fs" icon={faSun as IconProp} />
         </div>
         <div className="ball"></div>
       </label>
