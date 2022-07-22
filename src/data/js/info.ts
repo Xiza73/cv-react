@@ -1,64 +1,12 @@
-import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { ISimpleProps, IHeaderProps } from "../types";
-import {
-  faEnvelope,
-  faMapMarkerAlt,
-  faPhoneAlt,
-} from "@fortawesome/free-solid-svg-icons";
 import {
   IBarsLvlProps,
   IMainListProps,
   IDotsLvlProps,
-  IIconProps,
-} from "../types";
+} from "../../utils/types";
 
 export const rows: { firstColumn: number; secondColumn: number } = {
-  firstColumn: 5,
+  firstColumn: 4,
   secondColumn: 2,
-};
-
-export const header: IHeaderProps = {
-  title: "manuel fajardo",
-  description: "full stack developer",
-  link: "https://github.com/Xiza73/cv-react",
-};
-
-export const profile: ISimpleProps = {
-  title: "Perfil",
-  content:
-    "Estudiante de 9no ciclo de Ingeniería de Software deseoso de continuar creciendo en logros, conocimientos y experiencias, constantemente actualizándose en tecnologías centradas por ahora en el mundo del desarrollo.",
-};
-
-export const contact: IIconProps = {
-  title: "Contacto",
-  rows: [
-    {
-      //icon: faEnvelope,
-      icon: faEnvelope,
-      content: "m.fajardo.1098@gmail.com",
-      url: undefined,
-    },
-    {
-      icon: faPhoneAlt,
-      content: "+51938263506",
-      url: undefined,
-    },
-    {
-      icon: faMapMarkerAlt,
-      content: "Comas, Lima, Perú",
-      url: undefined,
-    },
-    {
-      icon: faGithubSquare,
-      content: "Xiza73",
-      url: "https://github.com/Xiza73",
-    },
-    {
-      icon: faLinkedin,
-      content: "m-fajardo-as",
-      url: "https://www.linkedin.com/in/m-fajardo-as/",
-    },
-  ],
 };
 
 export const abilities: IDotsLvlProps = {
@@ -66,21 +14,20 @@ export const abilities: IDotsLvlProps = {
   rows: [
     {
       content: "Back-end Dev",
-      subcontent: ["Express", "Spring", "Nest"],
+      subcontent: ["Express", "Nest"],
       icons: [
         "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg",
-        "https://www.vectorlogo.zone/logos/springio/springio-icon.svg",
       ],
       dots: 3,
     },
     {
       content: "Front-end Dev",
-      subcontent: ["Angular", "React"],
+      subcontent: ["React", "Angular", "Vue"],
       icons: [
-        "https://cdn.worldvectorlogo.com/logos/angular-icon.svg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
+        "https://cdn.worldvectorlogo.com/logos/angular-icon.svg",
       ],
-      dots: 4,
+      dots: 3,
     },
     {
       content: "DBA",
@@ -88,6 +35,15 @@ export const abilities: IDotsLvlProps = {
       icons: [
         "https://cdn.worldvectorlogo.com/logos/postgresql.svg",
         "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg",
+      ],
+      dots: 3,
+    },
+    {
+      content: "Lenguajes",
+      subcontent: ["TypeScript", "JavaScript", "Java"],
+      icons: [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png",
+        "https://static.cdnlogo.com/logos/j/69/javascript.svg",
       ],
       dots: 4,
     },
@@ -117,7 +73,7 @@ export const languages: IBarsLvlProps = {
     },
     {
       content: "Inglés",
-      percentage: 40,
+      percentage: 50,
     },
   ],
 };
@@ -129,32 +85,25 @@ export const workExperience: IMainListProps = {
       title: "Wally POS S.A.C. - Jr. Full Stack Developer",
       date: "Marzo, 2022 - Actualidad",
       achievements: [
-        "Mantenimiento constante del sistema principal 'MiWally' utilizando las tecnologías de Vue, NuxtJS, NodeJs, MongoDB.",
-        "Manejo de microservicios en NodeJS con Express y NestJS.",
+        "Vue, NuxtJS, NodeJS, Express, NestJS, MongoDB.",
+        "Manejo de API REST",
+        "Mantenimiento constante del sistema principal 'MiWally'.",
         "Refactorización del sistema secundario 'Consulta MiWally' de Vue a NuxtJS.",
         "Trabajo bajo metodología ágil Scrum en el rol de desarrollador.",
       ],
     },
     {
       title: "T-Integro S.A.C - Desarrollador Web",
-      date: "Julio, 2021 - Marzo, 2022",
+      date: "Junio, 2021 - Marzo, 2022",
       achievements: [
-        "Implementación de Historias de Usuarios a nivel front, back y base de datos utilizando las tecnologías de Angular, Spring, Postgres.",
+        "Angular, Spring Boot, Postgres.",
+        "Manejo de API REST",
+        "Implementación de Historias de Usuarios a nivel front, back y base de datos.",
         "Manejo de microservicios.",
         "Mantenimiento continuo de proyectos.",
         "Trabajo bajo metodología ágil, Scrum.",
       ],
     },
-    /* {
-      title: "Arca de Papel E.I.R.L - Freelancer",
-      date: "Agosto, 2021 - Enero, 2022",
-      achievements: [
-        "Maquetación de vistas interactivas en React.",
-        "Manejo de un servidor dedicado para el despliegue constante del proyecto.",
-        "Actualización de data y creación de schemas en MongoDB.",
-        "Implementación de funciones de MongoDB en Nestjs.",
-      ],
-    }, */
   ],
 };
 
@@ -170,23 +119,23 @@ export const personalProjects: IMainListProps = {
     {
       title: "Sistema de búsqueda de libros académicos en pdf",
       date: "2021",
-      achievements: ["Angular, NodeJS (Express), MongoDB, Typescript"],
+      achievements: ["Angular,  NodeJS (NestJS), MySQL, Typescript"],
     },
     {
       title: "Sistema de búsqueda de cursos con Webscraping",
       date: "2021",
       achievements: ["Angular, NodeJS (Express), Typescript, MongoDB, Python"],
     },
-    /* {
+    {
       title: "Horario con manejo de reportes para una radio",
-      date: "2021",
+      date: "2020",
       achievements: ["ReactJS, NodeJS (Express), MongoDB"],
-    }, */
-    /* {
+    },
+    {
       title: "Bot para Discord",
       date: "2020 - Mantenimiento continuo",
       achievements: ["NodeJS (Express), Typescript, MongoDB, DiscordJS"],
-    }, */
+    },
   ],
 };
 
@@ -197,18 +146,6 @@ export const education: IMainListProps = {
       title: "Ingeniería de Software",
       detail: "Universidad Nacional Mayor de San Marcos",
       date: "2017 - Actualidad",
-    },
-  ],
-};
-
-export const interests: IMainListProps = {
-  title: "Intereses",
-  rows: [
-    {
-      paragraph: "Educación: matemáticas, programación.",
-    },
-    {
-      paragraph: "Deportes: natación, ajedrez.",
     },
   ],
 };

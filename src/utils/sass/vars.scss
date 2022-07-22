@@ -3,7 +3,8 @@
 $full-height: 1518px;
 $margin: 90px 80px; */
 $full-width: 1200px;
-$full-height: 1698px;
+// $full-height: 1698px; for A4
+$full-height: auto;
 $padding-x: 80px;
 $padding-y: 48px;
 
@@ -11,48 +12,32 @@ $padding-y: 48px;
 $bg: #e7fffe;
 $primary: #03a9fe;
 $secondary: #083bc2;
-$soft: #1a1a1a;
-$strong: #000;
-$strong-tsp1: rgba(0, 0, 0, 0.685);
-$strong-tsp2: rgba(0, 0, 0, 0.31);
+$text: #1a1a1a;
+$text-opacity: rgba(0, 0, 0, 0.5);
 //dark-mode
-//option 1
-$dark-bg: #151515;
-$dark-primary: #3C415C;
-$dark-secondary: #301B3F;
-$dark-soft: #B4A5A5;
-$dark-strong: #fff;
-$dark-strong-tsp1: rgba(255, 255, 255, 0.31);
-$dark-strong-tsp2: rgba(255, 255, 255, 0.2);
-//option 2
-/* $dark-bg: #222222;
-$dark-primary: #044343;
-$dark-secondary: #045757;
-$dark-soft: #E4E4E4;
-$dark-strong: #fff; */
+$dark-bg: #252424;
+$dark-primary: #196b56;
+$dark-secondary: #193e36;
+$dark-text: #dbd6d2;
+$dark-text-opacity: #dbd6d26b;
 
 .theme {
   --bg: #{$bg};
   --primary: #{$primary};
   --secondary: #{$secondary};
-  --soft: #{$soft};
-  --strong: #{$strong};
-  --tsp1: #{$strong-tsp1};
-  --tsp2: #{$strong-tsp2};
+  --text: #{$text};
+  --text-opacity: #{$text-opacity};
   &.theme-dark {
     --bg: #{$dark-bg};
     --primary: #{$dark-primary};
     --secondary: #{$dark-secondary};
-    --soft: #{$dark-soft};
-    --strong: #{$dark-strong};
-    --tsp1: #{$dark-strong-tsp1};
-    --tsp2: #{$dark-strong-tsp2};
+    --text: #{$dark-text};
+    --text-opacity: #{$dark-text-opacity};
   }
 }
 
 .myClass {
   background-color: var(--bg);
-  color: var(--strong);
-  transition: background 0.2s linear,
-  color 0.2s linear;
+  color: var(--text);
+  transition: background 0.2s linear, color 0.2s linear;
 }

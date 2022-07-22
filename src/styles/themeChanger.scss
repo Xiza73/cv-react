@@ -4,11 +4,11 @@
   top: 50px;
   left: 1030px;
   cursor: pointer;
+
   .label {
     width: 50px;
     height: 26px;
-    background-color: var(--strong);
-    display: flex;
+    background-color: var(--text);
     border-radius: 50px;
     align-items: center;
     justify-content: space-between;
@@ -17,6 +17,58 @@
     transform: scale(1.5);
     transition: background 0.2s linear;
     cursor: pointer;
+  }
+
+  .pre-tooltip {
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    top: 123%;
+    cursor: default;
+
+    .tooltip {
+      background-color: var(--text);
+      border-radius: 10px;
+      color: var(--primary);
+      display: none;
+      padding: 7px 12px;
+      position: absolute;
+      text-align: center;
+      z-index: 999;
+      bottom: 100%;
+      left: 50%;
+      transform: translate(-50%, calc(100% + 10px));
+      cursor: pointer;
+
+      &::before {
+        background-color: var(--text);
+        content: " ";
+        display: none;
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        z-index: 998;
+        bottom: 130%;
+        left: 50%;
+        transform: translate(-50%, calc(100% + 5px)) rotate(45deg);
+      }
+
+      &:hover {
+        display: block;
+        &::before {
+          display: block;
+        }
+      }
+    }
+
+    &:hover {
+      .tooltip {
+        display: block;
+        &::before {
+          display: block;
+        }
+      }
+    }
   }
 
   .ball {

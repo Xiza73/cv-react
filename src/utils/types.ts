@@ -3,7 +3,7 @@ import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 export type IContact = {
   icon: IconDefinition | string;
   content: string;
-  url?: string;
+  url: string | null;
 };
 
 export type IAbilities = {

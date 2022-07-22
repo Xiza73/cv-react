@@ -41,7 +41,13 @@ function DotRow({ icons, content, subcontent, dots }: IAbilities) {
       <div className="content">
         <div className="text-content">
           <p className="main-content">{content}</p>
-          <p className="sub-content">{subcontent.join(", ")}</p>
+          <ul className="sub-contents">
+            {subcontent.map((e, i) => (
+              <li className="sc" key={`sc${i}`}>
+                {e}
+              </li>
+            ))}
+          </ul>
         </div>
         {dotIcons}
       </div>

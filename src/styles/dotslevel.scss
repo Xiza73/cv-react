@@ -3,40 +3,52 @@
   .dots-rows {
     .dot-row {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
       margin-bottom: 13px;
       .content {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         .text-content {
           margin-right: 5px;
           max-width: 77%;
           .main-content {
             line-height: 100%;
             margin: 0;
+            margin-bottom: 0.5rem;
           }
           .sub-content {
-            color: var(--tsp1);
+            color: var(--text-opacity);
             font-size: 0.7rem;
             line-height: 0.7rem;
             margin: 1px 0 0 0;
             transition: color 0.2s linear;
           }
+          .sub-contents {
+            margin-bottom: 1.1rem;
+            padding-left: 20px;
+            .sc {
+              color: var(--text-opacity);
+              font-size: 1rem;
+              line-height: 1rem;
+              margin: 1px 0 0 0;
+              transition: color 0.2s linear;
+            }
+          }
         }
         svg {
-            margin-left: 5px;
+          margin-left: 5px;
         }
       }
       .dots {
         display: flex;
         align-items: center;
         .il {
-            margin: 0 3px;
-            width: 30px !important;
-            height: 25px !important;
-            color: var(--primary);
-            transition: color 0.2s linear;
+          margin: 0 3px;
+          width: 30px !important;
+          height: 25px !important;
+          color: var(--primary);
+          transition: color 0.2s linear;
         }
       }
     }
